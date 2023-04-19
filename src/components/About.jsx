@@ -78,13 +78,14 @@ const About = () => {
         </div>
 
         <div
-          className="row rounded mt-2 mt-sm-5 justify-content-center"
+          className="row rounded mt-2 mt-sm-5 justify-content-center py-3"
           id="techStack"
           style={{ fontSize: "16px" }}
         >
           <div className="col-5 col-sm-4 col-lg-3 d-flex justify-content-center">
             <div className="text-center">
-              <h5 style={{ opacity: "0.75" }}>
+              {/* <h5 style={{ opacity: "0.75" }}> */}
+                <h5>
                 Front End
               </h5>
 
@@ -109,7 +110,8 @@ const About = () => {
           </div>
           <div className="col-5 col-sm-4 col-lg-3 d-flex justify-content-center">
             <div className="text-center">
-            <h5 style={{ opacity: "0.75" }}>
+            {/* <h5 style={{ opacity: "0.75" }}> */}
+            <h5>
                 Back End
               </h5>
               <span>
@@ -135,7 +137,8 @@ const About = () => {
           </div>
           <div className="d-none d-sm-block col-sm-4 col-lg-3 d-flex justify-content-center">
             <div className="text-center">
-            <h5 style={{ opacity: "0.75" }}>
+            {/* <h5 style={{ opacity: "0.75" }}> */}
+            <h5>
                 Mobile
               </h5>
               <span>
