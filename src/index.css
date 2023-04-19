@@ -1,0 +1,746 @@
+/* Stops app from sliding left or right from the viewport. */
+
+html,
+body {
+  padding-top: 40px !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+}
+
+.offcanvas.show {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+@font-face {
+  font-family: anak;
+  src: url(/src/assets/fonts/Anek_Malayalam/static/AnekMalayalam/AnekMalayalam-Regular.ttf);
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url(/src/assets/fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: Dancing;
+  src: url(/src/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+/* Applies to body of entire app */
+body {
+  background-color: #0b192e;
+}
+
+@media screen and (min-width: 700px) {
+  .spacer {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Home {
+    position: absolute !important;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  .Home {
+    padding-left: 400px !important;
+    padding-right: 400px !important;
+  }
+}
+
+@media screen and (min-width: 3200px) {
+  .Home {
+    padding-left: 500px !important;
+    padding-right: 500px !important;
+  }
+}
+
+/* Component Styling */
+/* Mobile first design*/
+/* Styling for navigation links */
+.nav-link {
+  color: whitesmoke;
+}
+
+/* Styling for Navbar component with media queries */
+/* Navbar Styling Start */
+
+.navbar {
+  background-color: #0b192e;
+}
+
+.navbar-brand {
+  font-size: 35px;
+}
+
+.offcanvas-title {
+  font-size: 45px;
+}
+
+.offcanvas-body {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
+
+  .offcanvas {
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .offcanvas-title {
+    font-size: 70px !important;
+  }
+
+  .offcanvas-body {
+    font-size: 40px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offcanvas {
+    width: 30% !important;
+  }
+
+  .offcanvas-body {
+    font-size: 28px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .offcanvas {
+    width: 30% !important;
+  }
+
+  .offcanvas-body {
+    font-size: 35px !important;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .offcanvas {
+    width: 20% !important;
+  }
+
+  .offcanvas-body {
+    font-size: 35px !important;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .offcanvas-body {
+    /* margin-top: 50px !important; */
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .offcanvas-title {
+    font-size: 55px;
+  }
+  .offcanvas-body {
+    font-size: 32px;
+    /* margin-top: 50px !important; */
+  }
+}
+
+/* @media screen and (min-height: 700px) and (min-width: 400px) {
+  .offcanvas-title {
+    font-size: 55px;
+  }
+  .offcanvas-body {
+    font-size: 34px;
+    margin-top: 60px !important;
+  }
+} */
+
+/* @media screen and (min-height: 1000px) {
+  .offcanvas-title {
+    margin-top: 60px;
+    font-size: 55px;
+  }
+  .offcanvas-body {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-height: 1240px) {
+  .offcanvas-title {
+    margin-top: 120px;
+    font-size: 55px;
+  }
+  .offcanvas-body {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+} */
+
+/* Navbar Component Styling End */
+
+/* Intro Component Styling Start */
+
+@media screen and (min-width: 700px) {
+  .Intro {
+    padding-left: 30px;
+  }
+  .btn-group {
+    display: block !important;
+    margin-top: 15px;
+  }
+
+  #btn-github {
+    font-size: 16px;
+  }
+
+  #btn-linkedin {
+    font-size: 16px;
+  }
+  #introHello {
+    font-size: 22px !important;
+  }
+
+  #introParagraph {
+    font-size: 16px !important;
+    width: 70% !important;
+  }
+
+  #introName {
+    font-size: 55px;
+  }
+
+  #introTitle {
+    font-size: 55px;
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  .btn-group {
+    display: block !important;
+    margin-top: 20px;
+  }
+
+  #btn-github {
+    font-size: 14px;
+  }
+
+  #btn-linkedin {
+    font-size: 14px;
+  }
+  #introHello {
+    font-size: 16px !important;
+  }
+
+  #introName {
+    font-size: 40px;
+  }
+
+  #introTitle {
+    font-size: 40px;
+  }
+
+  #introParagraph {
+    font-size: 16px !important;
+  }
+} */
+
+/* @media screen and (min-width: 1300px) {
+  #btn-linkedin {
+    font-size: 18px !important;
+  }
+
+  #btn-instagram {
+    font-size: 22px !important;
+  }
+  #btn-github {
+    font-size: 22px !important;
+  }
+
+  #btn-linkedin {
+    font-size: 22px !important;
+  }
+  #introHello {
+    font-size: 22px !important;
+  }
+
+  #introName {
+    font-size: 45px;
+  }
+
+  #introTitle {
+    font-size: 45px;
+  }
+
+  #introParagraph {
+    font-size: 20px !important;
+  }
+} */
+
+@media screen and (min-width: 1500px) {
+  .Intro {
+    padding-left: 50px;
+  }
+
+  #introHello {
+    font-size: 20px !important;
+    margin-left: 6px !important;
+  }
+
+  #introName {
+    margin-bottom: -10px !important;
+  }
+
+  #introTitle {
+    margin-bottom: 0 !important;
+  }
+
+  #introParagraph {
+    font-size: 16px !important;
+    margin-right: 700px !important;
+    max-width: 50% !important;
+  }
+
+  #btn-linkedin {
+    font-size: 16px !important;
+  }
+
+  #btn-instagram {
+    font-size: 16px !important;
+  }
+  #btn-github {
+    font-size: 16px !important;
+  }
+
+  #btn-linkedin {
+    font-size: 16px !important;
+  }
+}
+
+/* Intro Component Styling End */
+
+/* About Component Styling Start */
+
+@media screen and (min-width: 700px) {
+  #aboutHeaderDesktop {
+    display: block !important;
+  }
+
+  #aboutHeader {
+    font-size: 40px !important;
+    width: 100% !important;
+    opacity: 0.75 !important;
+    display: none;
+  }
+
+  #aboutP {
+    font-size: 18px !important;
+    width: 115%;
+  }
+
+  #techStack {
+    font-size: 18px !important;
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  #aboutHeader {
+    font-size: 50px !important;
+  }
+
+  #aboutP {
+    font-size: 20px !important;
+  }
+} */
+
+/* @media screen and (min-width: 1300px) {
+  #aboutHeader {
+    font-size: 50px !important;
+  }
+
+  #aboutP {
+    font-size: 18px !important;
+  }
+
+  #techStack {
+    font-size: 26px !important;
+  }
+} */
+
+@media screen and (min-width: 1300px) {
+  #aboutHeader {
+    font-size: 40px !important;
+    margin-left: 10% !important;
+  }
+
+  #aboutP {
+    font-size: 16px !important;
+    max-width: 95% !important;
+  }
+
+  #techStack {
+    font-size: 16px !important;
+    margin-top: 100px !important;
+  }
+}
+
+/* About Component Styling End */
+
+/* Skills Component Styling Start */
+
+@media screen and (min-width: 700px) {
+  #skillsTitle {
+    font-size: 40px !important;
+    opacity: 0.75;
+    display: none;
+  }
+
+  #skillsHeaderDesktop {
+    display: block !important;
+  }
+
+  #skillsP {
+    font-size: 16px !important;
+  }
+
+  #keySkills {
+    font-size: 16px !important;
+  }
+
+  #skillsWeb {
+    font-size: 22px !important;
+  }
+
+  #skillsMobile {
+    font-size: 22px !important;
+  }
+
+  #skillsDesign {
+    font-size: 22px !important;
+  }
+
+  #transSkillsTitle {
+    font-size: 20px !important;
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  #skillsP {
+    font-size: 20px !important;
+  }
+
+  #keySkills {
+    font-size: 22px !important;
+  }
+
+  #transSkillsTitle {
+    font-size: 20px !important;
+  }
+
+  #skillsWeb {
+    font-size: 20px !important;
+  }
+
+  #skillsMobile {
+    font-size: 20px !important;
+  }
+
+  #skillsDesign {
+    font-size: 20px !important;
+  }
+
+  #transSkillsTitle {
+    font-size: 22px !important;
+  }
+
+  #transSkillsList {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #skillsTitle {
+    font-size: 50px !important;
+  }
+
+  #skillsP {
+    font-size: 26px !important;
+  }
+
+  #keySkills {
+    font-size: 26px !important;
+  }
+
+  #skillsWeb {
+    font-size: 26px !important;
+  }
+
+  #skillsMobile {
+    font-size: 26px !important;
+  }
+
+  #skillsDesign {
+    font-size: 26px !important;
+  }
+
+  #transSkillsTitle {
+    font-size: 26px !important;
+  }
+
+  #transSkillsList {
+    font-size: 22px !important;
+  }
+} */
+
+@media screen and (min-width: 1500px) {
+  #skillsP {
+    margin-top: 60px !important;
+    margin-bottom: 20px !important;
+    font-size: 16px !important;
+    margin-left: 30% !important;
+    margin-right: 30% !important;
+  }
+
+  #keySkills {
+    font-size: 28px !important;
+  }
+
+  #skillsWeb {
+    font-size: 20px !important;
+  }
+
+  #skillsMobile {
+    font-size: 20px !important;
+  }
+
+  #skillsDesign {
+    font-size: 20px !important;
+  }
+
+  #webDevImg {
+    width: 50% !important;
+  }
+
+  #mobileAppDevImg {
+    width: 50% !important;
+    margin-right: 4% !important;
+  }
+
+  #mobileDesignImg {
+    width: 50% !important;
+    margin-right: 6% !important;
+  }
+
+  #transSkillsList {
+    font-size: 16px !important;
+    margin-top: 20px !important;
+  }
+
+  #transSkillsTitle {
+    font-size: 20px !important;
+  }
+}
+
+/* Skills Component Styling End */
+
+/* Education Component Styling Start */
+
+@media screen and (min-width: 700px) {
+  #educationHeaderDesktop {
+    display: block !important;
+  }
+
+  #educationTitle {
+    font-size: 45px !important;
+    opacity: 0.75;
+    display: none;
+  }
+
+  #uniName {
+    font-size: 32px !important;
+  }
+
+  #uniP {
+    font-size: 22px !important;
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  #uniName {
+    font-size: 28px !important;
+  }
+
+  #uniP {
+    font-size: 22px !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #uniP {
+    font-size: 26px !important;
+  }
+
+  #uniName {
+    font-size: 36px !important;
+  }
+
+  #educationTitle {
+    font-size: 50px !important;
+  }
+} */
+
+@media screen and (min-width: 1500px) {
+  #educationTitle {
+    font-size: 45px !important;
+  }
+
+  #uniName {
+    font-size: 26px !important;
+  }
+
+  #uniP {
+    font-size: 18px !important;
+  }
+}
+
+/* Education Component Styling End */
+
+/* Projects Component Styling Start */
+
+.projectCard {
+  transition: transform .2s;
+}
+
+.projectCard:hover {
+  -ms-transform: scale(0.5); /* IE 9 */
+  -webkit-transform: scale(0.5); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+@media screen and (min-width: 700px) {
+  #projectsTitle {
+    font-size: 40px !important;
+    opacity: 0.75;
+    display: none;
+  }
+
+  .projectTitles {
+    font-size: 22px !important;
+  }
+
+  .projectsP {
+    font-size: 16px !important;
+  }
+
+  .projectCard {
+    height: 350px !important;
+    width: 60% !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .projectCard {
+    width: 40% !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .projectCard {
+    width: 40% !important;
+    height: 400px !important;
+  }
+
+  .projectsP {
+    font-size: 18px !important;
+  }
+
+  .projectTitles {
+    font-size: 26px !important;
+  }
+
+  .projectsBtn {
+    font-size: 18px !important;
+  }
+
+  #projectsTitle {
+    font-size: 50px !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #projectsTitle {
+    font-size: 45px !important;
+  }
+
+  .projectCard {
+    width: 30% !important;
+    height: 300px !important;
+    margin-top: 0 !important;
+    margin-bottom: 50px !important;
+  }
+
+  .projectTitles {
+    font-size: 20px !important;
+  }
+
+  .projectsP {
+    font-size: 16px !important;
+  }
+
+  .projectsBtn {
+    font-size: 18px !important;
+    width: 35% !important;
+    margin-top: 10px !important;
+  }
+}
+
+/* Projects Component Styling End */
+
+/* Footer Component Styling Start */
+
+@media screen and (min-width: 1300px) {
+  .footerIcons {
+    font-size: 40px !important;
+  }
+}
+
+/* Footer Component Styling End */
+
+/* ProjectDataImg Component Styling Start */
+
+@media screen and (min-width: 1000px) {
+  .caraContainer {
+    height: 550px !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .caraContainer {
+    height: 700px !important;
+  }
+}
+
+/* ProjectDataName Component Styling End */
+
+/* ProjectDataImg Component Styling Start */
+
+/* ProjectDataImg Component Styling End */
