@@ -3,10 +3,7 @@ import Spacer from "./Spacer";
 const Intro = () => {
   return (
     <div className="Intro">
-      <div className="container d-md-none" style={{visibility: "hidden"}}>
-        <h1 id="hello-mobile">Hello</h1>
-      </div>
-      <div className="container-fluid mt-md-5">
+      <div className="container-fluid mt-2 mt-md-5">
         <p className="ms-1 mb-0"
           style={{
             color: "#64ffda",

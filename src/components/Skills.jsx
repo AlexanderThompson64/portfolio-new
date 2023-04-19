@@ -5,7 +5,7 @@ import designImg from "../img/figmaxd.png";
 const Skills = () => {
   return (
     <div className="Skills text-white" style={{ fontFamily: "anak" }}>
-      <div className="container-fluid d-flex mb-sm-2" id="thisone">
+      <div className="container-fluid d-flex mb-sm-2" id="skills">
         <h1 style={{ width: "80px" }} id="skillsTitle">
           <span>Skills</span>
         </h1>
@@ -19,7 +19,7 @@ const Skills = () => {
         />
       </div>
       <div className="container-fluid d-flex justify-content-center">
-        <div style={{ fontSize: "16px"}} id="skillsP">
+        <div style={{ fontSize: "16px" }} id="skillsP">
           <h2
             className="d-none"
             id="skillsHeaderDesktop"
@@ -27,11 +27,14 @@ const Skills = () => {
           >
             Skills
           </h2>
-          Throughout my studies over the last 4 years I have completed a range
-          of various projects and gained an array of skills throughout my study,
-          personal projects and work. <br />
-          <br />I also gained valuable transferable skills through previous
-          employment over my years in fast paced driven environments.
+          <p>
+            Throughout my studies over the last 4 years I have completed a range
+            of various projects and gained an array of skills throughout my study,
+            personal projects and work. <br />
+            <br />I also gained valuable transferable skills through previous
+            employment over my years in fast paced driven environments.
+          </p>
+
           <br />
           <br />
         </div>
@@ -68,34 +71,34 @@ const Skills = () => {
             <div className="carousel-item active text-white">
               <div className="container d-flex flex-column justify-content-center align-items-center text-center">
                 <h1>Web Development</h1>
-                <div className="container d-flex flex-column justify-content-center" style={{height: "300px"}}>
+                <div className="container d-flex flex-column justify-content-center" style={{ height: "300px" }}>
 
-                <img
-                  src={webDevImg}
-                  className="d-block rounded mx-auto img-fluid mb-5 "
-                  style={{ maxWidth: "300px" }}
-                  alt="..."
-                />
+                  <img
+                    src={webDevImg}
+                    className="d-block rounded mx-auto img-fluid mb-5 "
+                    style={{ maxWidth: "300px" }}
+                    alt="..."
+                  />
                 </div>
               </div>
             </div>
             <div className="carousel-item text-white">
               <div className="container d-flex flex-column align-items-center">
                 <h1>Mobile App Development</h1>
-                <div className="container d-flex flex-column justify-content-center" style={{height: "300px"}}>
-                <img
-                  src={mobileDevImg}
-                  className="d-block rounded mx-auto mb-5 "
-                  style={{ maxWidth: "300px", paddingRight: "20px" }}
-                  alt="..."
-                />
+                <div className="container d-flex flex-column justify-content-center" style={{ height: "300px" }}>
+                  <img
+                    src={mobileDevImg}
+                    className="d-block rounded mx-auto mb-5 "
+                    style={{ maxWidth: "300px", paddingRight: "20px" }}
+                    alt="..."
+                  />
                 </div>
               </div>
             </div>
             <div className="carousel-item">
               <div className="container d-flex flex-column align-items-center">
                 <h1>Design</h1>
-                <div className="container d-flex flex-column justify-content-center" style={{height: "300px"}}>
+                <div className="container d-flex flex-column justify-content-center" style={{ height: "300px" }}>
                   <img
                     src={designImg}
                     className="d-block rounded mx-auto mb-5 "

@@ -2,7 +2,7 @@ import alexProfilePic from "../img/Alex.jpeg";
 
 const About = () => {
   return (
-    <div className="About mt-4" style={{ fontFamily: "anak" }}>
+    <div className="About mb-4 mt-5 mt-md-4" style={{ fontFamily: "anak" }}>
       <div className="text-white" id="aboutStatement">
         <div className="container-fluid d-flex">
           <h1 className="mt-sm-5" id="aboutHeader" style={{ width: "180px" }}>

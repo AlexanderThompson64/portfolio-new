@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
     <div className="Projects text-white" style={{ fontFamily: "anak" }}>
-      <div className="container-fluid d-flex mb-sm-5 ">
+      <div className="container-fluid d-flex mt-5 mb-sm-5" id="projects">
         <h1 style={{ width: "140px" }} id="projectsTitle">
           Projects
         </h1>
@@ -28,7 +28,7 @@ const Projects = () => {
       <br />
       <div className="desktopProjectsContainer container d-xl-flex align-items-center">
         <div
-          className="projectCard text-center container mb-5 d-flex flex-column justify-content-center rounded"
+          className="projectCard text-center container mb-4 d-flex flex-column justify-content-center rounded"
           style={{ width: "90%", height: "310px", backgroundColor: "#0F243D", boxShadow: " 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}
         >
           <h1 className="projectTitles" style={{ fontSize: "20px" }}>
@@ -89,7 +89,7 @@ const Projects = () => {
           </div>
         </div>
         <div
-          className="projectCard text-center container mt-5 d-flex flex-column justify-content-center rounded"
+          className="projectCard text-center container mt-4 d-flex flex-column justify-content-center rounded"
           style={{ width: "90%", height: "310px", backgroundColor: "#0F243D", boxShadow: " 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}
         >
           <h1 className="projectTitles" style={{ fontSize: "20px" }}>

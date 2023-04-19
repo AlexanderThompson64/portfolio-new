@@ -14,9 +14,7 @@ const Home = () => {
       <Navbar/>
       <Intro />
       <About />
-      <div className="spacer " id="spacer2"><Spacer /></div>
       <Skills />
-      <div className="spacer " id="spacer3"><Spacer /></div>
       <Projects />
       <div className="spacer " id="spacer4"><Spacer /></div>
       <Footer />

@@ -145,7 +145,7 @@ const Navbar = () => {
                   <Link
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
-                    to="spacer2"
+                    to="skills"
                     spy={true}
                     smooth={false}
                     className="nav-link mb-2"
@@ -158,7 +158,7 @@ const Navbar = () => {
                   <Link
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
-                    to="spacer3"
+                    to="projects"
                     spy={true}
                     smooth={false}
                     className="nav-link mb-2"
