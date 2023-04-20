@@ -67,7 +67,7 @@ const Navbar = () => {
             
           </div>
           <button
-            className="navbar-toggler me-4 d-xxl-none"
+            className="navbar-toggler me-4 "
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
