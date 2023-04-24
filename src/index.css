@@ -89,6 +89,26 @@ body {
   font-size: 35px;
 }
 
+.navbar-toggler {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:hover {
+  outline: 2px solid rgba(255, 255, 255, 0.5) !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  filter: brightness(1.5);
+}
+
+
 .offcanvas-title {
   font-size: 45px;
 }

@@ -7,6 +7,7 @@ const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [offcanvasOpen, setOffcanvasOpen] = useState(false);
   const [disableScroll, setDisableScroll] = useState(false);
+  const [togglerActive, setTogglerActive] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
